@@ -1,7 +1,7 @@
 let altura = 0;
 let largura = 0;
 let dispensas = 1;
-let tempo = 21;
+let tempo = 31;
 let criaSoldadoTempo = 3500;
 
 let escolhaDificuldade = window.location.search;
