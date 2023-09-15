@@ -1,6 +1,7 @@
 @fontePrincipal: 'Roboto', sans-serif;
 @corPrimaria: #729069;
 @corSecundaria: #fff;
+@breakpointMobile: ~"(max-width: 767px)";
 
 * {
     padding: 0;
@@ -16,7 +17,17 @@ html {
 body {
     background-image: url(../images/cenario3.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    width: 100%;
+
+    @media @breakpointMobile {
+        html {
+            position:fixed;
+            width:100%;
+            height:100%;
+        }
+    }
+
 
     .btn {
         font-weight: bold;
